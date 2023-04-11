@@ -116,8 +116,7 @@ class Student {
     return this.marks[subjectName].reduce((acc, item) => acc + item, 0) / this.marks[subjectName].length;
   }
 
-
- getAverage() {
+  getAverage() {
     return Object.keys(this.marks).reduce((acc, item) => acc += this.getAverageBySubject(item), 0) / Object.keys(this.marks).length;
   }
 }
